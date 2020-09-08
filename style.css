@@ -35,7 +35,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
   font-family: "Montserrat";
   text-align: center;
-  width: 60%;
+  width: 100%;
 }
 .title h1 {
   position: relative;
