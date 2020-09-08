@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+.more-pens {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10;
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #edf3f8;
+  background: -moz-radial-gradient(center, ellipse cover, #edf3f8 1%, #dee3e8 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #edf3f8 1%, #dee3e8 100%);
+  background: radial-gradient(ellipse at center, #edf3f8 1%, #dee3e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf3f8', endColorstr='#dee3e8',GradientType=1 );
+}
+
+.title {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 60%;
+}
+.title h1 {
+  position: relative;
+  color: #000000;
+  font-weight: 300;
+  font-size: 46px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.title h2 {
+  font-weight: 600;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.title h3 {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  color: #5e7283;
+  letter-spacing: 2px;
+}
+.title p {
+  font-weight: 200;
+  font-size: 16px;
+  color: #5e7283;
+}
+
+.pentahedron {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: #3E82F7;
+}
+
+.point {
+  fill: #8491A3;
+}
+
+.rhombus {
+  fill: #2DA94F;
+  stroke: #2DA94F;
+}
+
+.x {
+  fill: #FDBD00;
+}
+
+.circle {
+  fill: #ED412D;
+}
+
+svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: translateZ(0px);
+}
+
+#resumeBtn{
+    width: 15vmin;
+    height: 5vmin;
+    margin-top: 1em;
+    background-color: transparent;
+    border: 1px solid rgb(18, 122, 182);
+    color: rgb(18, 122, 182);
+    border-radius: 0.5vmin;
+    font-size: large;
+}
+
+#resumeBtn:hover {
+    background-color: rgb(18, 122, 182);
+    border: 1px solid rgb(18, 122, 182);
+    color: #edf3f8;
+    border-radius: 0.5vmin;
+}
+
+#resumeBtn:focus {
+    outline: none;
+    outline-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: rgb(18, 122, 182);
+}
+
+a:focus{
+    color: white;
+}
+.fa{
+    margin: 0.5em;
+    transition: 0.5s;
+}
+.fa:hover{
+    transform: scale(1.2);
+}
+.fa-instagram{
+    color: #C605CF;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-linkedin{
+    color: #054FF9;
+}
+.fa-github{
+    color: black;
+}
+.fa-twitter{
+    color: #11EAD3;
+}
