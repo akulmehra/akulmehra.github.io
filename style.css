@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
-.more-pens {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
-  z-index: 10;
-  font-family: "Montserrat";
-  font-size: 12px;
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 body {
@@ -29,42 +26,44 @@ body {
 
 .title {
   z-index: 10;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 40%;
   transform: translateX(-50%) translateY(-50%);
   font-family: "Montserrat";
   text-align: center;
   width: 100%;
+
 }
 .title h1 {
   position: relative;
-  color: #000000;
+  color: white;
   font-weight: 300;
-  font-size: 46px;
+  font-size: 3em;
   padding: 0;
   margin: 0;
   line-height: 1;
 }
 .title h2 {
   font-weight: 600;
-  font-size: 60px;
+  font-size: 4em;
   padding: 0;
   margin: 0;
   line-height: 1;
+  color: white;
 }
 .title h3 {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 1em;
   padding: 0;
   margin: 0;
   line-height: 2;
-  color: #5e7283;
+  color: white;
   letter-spacing: 2px;
 }
 .title p {
   font-weight: 200;
-  font-size: 16px;
+  font-size: 2em;
   color: #5e7283;
 }
 
@@ -100,22 +99,10 @@ svg {
   transform: translateZ(0px);
 }
 
-#resumeBtn{
-    width: 15vmin;
-    height: 5vmin;
-    margin-top: 1em;
-    background-color: transparent;
-    border: 1px solid rgb(18, 122, 182);
-    color: rgb(18, 122, 182);
-    border-radius: 0.5vmin;
-    font-size: large;
-}
-
-#resumeBtn:hover {
-    background-color: rgb(18, 122, 182);
-    border: 1px solid rgb(18, 122, 182);
-    color: #edf3f8;
-    border-radius: 0.5vmin;
+#resumeLink{
+    border: 1px solid white;
+    border-radius: 0.5em;
+    padding: 0.2em;
 }
 
 #resumeBtn:focus {
@@ -124,11 +111,15 @@ svg {
 }
 a{
     text-decoration: none;
-    color: rgb(18, 122, 182);
+    font-weight: 400;
+    font-size: 1.5em;
+    color: white;
+    transition: 0.5s;
 }
 
-a:focus{
-    color: white;
+a:hover{
+    color: #FDBD00;
+    transform: scale(1.2);
 }
 .fa{
     margin: 0.5em;
@@ -138,17 +129,32 @@ a:focus{
     transform: scale(1.2);
 }
 .fa-instagram{
-    color: #C605CF;
+    color: white;
+}
+.fa-instagram:hover{
+    color: #f00fa5;
 }
 .fa-facebook{
-    color: blue;
+    color: white;
+}
+.fa-facebook:hover{
+    color: #350af3;
 }
 .fa-linkedin{
-    color: #054FF9;
+    color: white;
+}
+.fa-linkedin:hover{
+    color: #3E82F7;
 }
 .fa-github{
-    color: black;
+    color: white;
+}
+.fa-github:hover{
+    color: #FDBD00;
 }
 .fa-twitter{
-    color: #11EAD3;
+    color: white;
+}
+.fa-twitter:hover{
+    color: #3eccf7;
 }
